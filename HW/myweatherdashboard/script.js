@@ -21,7 +21,7 @@ $(document).ready(function() {
     function searchWeather(searchLocation) {
         $.ajax({
             type: "GET",
-            url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchLocation + "&appid=0ee42d3011ef8af909385f6f86b5f4ab&units=imperial",
+            url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchLocation + "&appid=0ee42d3011ef8af909385f6f86b5f4ab&units=imperial",
             dataType: "json",
             success: function(data) {
                 // history link for this search
