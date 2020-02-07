@@ -60,7 +60,7 @@ console.log("data", data)
     function getForecast(searchLocation) {
         $.ajax({
             type: "GET",
-            url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchLocation + "&appid=0ee42d3011ef8af909385f6f86b5f4ab&units=imperial",
+            url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchLocation + "&appid=0ee42d3011ef8af909385f6f86b5f4ab&units=imperial",
             dataType: "json",
             success: function(data) {
                 // console.log("forecast", data)
@@ -95,7 +95,7 @@ console.log("data", data)
     function getUVIndex(lat, lon) {
         $.ajax({
             type: "GET",
-            url: "http://api.openweathermap.org/data/2.5/uvi/forecast?&aapid=0ee42d3011ef8af909385f6f86b5f4ab" + lat + "&lon" + lon,
+            url: "https://api.openweathermap.org/data/2.5/uvi/forecast?&aapid=0ee42d3011ef8af909385f6f86b5f4ab" + lat + "&lon" + lon,
             dataType: "json",
             success: function(data) {
                 var uvIndex = $("<p>").text("UV Index: ");
